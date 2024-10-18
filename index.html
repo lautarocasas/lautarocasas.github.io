@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css"> 
     <title>Lautaro Casas | Desarrollador Jr</title>
 </head>
 <body>
@@ -17,35 +18,39 @@
 
     <section>
         <h3>Sobre mi carrera</h3>
-        <p>Durante mi carrera de Ingeniería Informática, he adquirido un sólido conocimiento en desarrollo de software y ciencias de la computación, lo que me permitió desarrollar habilidades técnicas fundamentales. A través de materias clave como Sistemas Operativos, Algoritmos y Estructuras de Datos, Bases de Datos y Análisis de Sistemas, he obtenido herramientas cruciales para diseñar y desarrollar soluciones eficientes y escalables.</p>
+        <p>Durante mi carrera de Ingeniería Informática, he adquirido un sólido conocimiento en desarrollo de software y ciencias de la computación, lo que me permitió desarrollar habilidades técnicas fundamentales. A través de materias como Sistemas Operativos, Algoritmos y Estructuras de Datos, Bases de Datos y Análisis de Sistemas, he obtenido herramientas cruciales para diseñar y desarrollar soluciones eficientes y escalables.</p>
         <p>Estos cursos me han permitido comprender desde la gestión de recursos en un sistema operativo, hasta el diseño y la optimización de bases de datos y la creación de sistemas complejos. La combinación de enfoques teóricos y prácticos me ha dado una visión integral para abordar proyectos de software, asegurando que cada fase, desde el análisis hasta la implementación, esté orientada a la calidad y eficiencia.</p>
     </section>
 
-    <section>
+    <section class="main-languages">
         <h3>Lenguajes</h3>
-        <ul>
-            <li>C/C++</li>
-            <p>En mi educación como Técnico Electrónico utilicé el lenguaje C para programar microcontroladores, mientras que en mi carrera de Ingeniero Informático, profundicé en el lenguaje aprendiendo conceptos mas avanzados como Punteros y Estructuras de Datos.</p>
-
-            <li>Java</li>
-            <p>Comence a aprender Java a partir de un curso en EducacionIT y continue utilizando este lenguaje en mi carrera para trabajar y aprender el paradigma orientado a objetos (POO).</p>
-
-            <li>JavaScript</li>
-            <p>Actualmente me encuentro aprendiendo este lenguaje mediante el curso de CoderHouse. En este sitio podras encontrar el proyecto final que estoy desarrollando para dicho curso.</p>
-
-            <li>SQL</li>
-            <p>En las materias "Base de datos" y "Base de datos aplicadas" aprendi los distintos sublenguajes de SQL (DDL,DML,DCL) y realice un trabajo practico donde se genera una base de datos para un hospital junto a los procedimientos y triggers asociados a esta. </p>
-        </ul>
+        <div class="language-icons">
+            <img class="main-language-icon" src="icons/cplusplus-original.svg" alt="C/C++" onclick="showDescription('c-cpp')">
+            <img class="main-language-icon" src="icons/java-original-wordmark.svg" alt="Java" onclick="showDescription('java')">
+            <img class="main-language-icon" src="icons/javascript-original.svg" alt="JavaScript" onclick="showDescription('javascript')">
+            <img class="main-language-icon" src="icons/sql-original-wordmark.svg" alt="SQL" onclick="showDescription('sql')">
+        </div>
+    
+        <div class="language-description-container">
+            <p id="c-cpp" class="language-description">Durante mi formación como Técnico Electrónico, adquirí experiencia programando microcontroladores con C, lo que me permitió dominar los fundamentos del lenguaje. A lo largo de mi carrera en Ingeniería Informática, he profundizado en conceptos avanzados de C y C++, como el manejo de punteros, estructuras de datos y la gestión eficiente de la memoria, lo que me ha preparado para abordar proyectos más complejos en estos lenguajes.</p>
+    
+            <p id="java" class="language-description">Inicié mi aprendizaje de Java a través de un curso en EducaciónIT, donde adquirí las bases del lenguaje. Posteriormente, en mi carrera universitaria, utilicé Java para profundizar en el paradigma de la programación orientada a objetos (POO), aplicando conceptos como herencia, polimorfismo y encapsulamiento en diversos proyectos académicos.</p>
+    
+            <p id="javascript" class="language-description">Actualmente estoy ampliando mis conocimientos de JavaScript a través de un curso avanzado en CoderHouse, donde me especializo en el desarrollo web interactivo y dinámico. Mi proyecto final para este curso, disponible en este sitio, integra varios conceptos clave del lenguaje, incluyendo la manipulación del DOM, eventos y el uso de librerías.</p>
+    
+            <p id="sql" class="language-description">En las materias 'Bases de Datos' y 'Bases de Datos Aplicadas', adquirí un dominio sólido de los sublenguajes SQL, como DDL, DML y DCL. Como parte de mi formación, realicé un proyecto práctico en el que diseñé y desarrollé una base de datos completa para la gestión de un hospital, implementando procedimientos almacenados y triggers para optimizar su funcionalidad y garantizar la integridad de los datos.</p>
+        </div>
     </section>
-
+       
     <section>
         <h3>Otras tecnologias</h3>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Git</li>
+            <img class="main-language-icon" src="icons/html5-original-wordmark.svg" alt="HTML">
+            <img class="main-language-icon" src="icons/css3-original-wordmark.svg" alt="CSS">
+            <img class="main-language-icon" src="icons/git-original-wordmark.svg" alt="Git">
         </ul>
     </section>  
+    <script src = "index.js"></script>
 </body>
 </html>
 

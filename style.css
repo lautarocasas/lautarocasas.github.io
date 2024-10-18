@@ -1,0 +1,47 @@
+.main-languages{
+    margin: 10px;
+    margin-bottom: 70px;
+}
+
+
+/* Contenedor de los iconos de lenguajes */
+.language-icons {
+    display: flex;
+    flex-direction: column; /* Alineación vertical */
+    width: 100px; /* Ajusta el tamaño del contenedor de iconos si es necesario */
+    float: left; /* Alinear a la izquierda */
+    margin-right: 20px;
+}
+
+/* Iconos de lenguajes */
+.main-language-icon {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0; /* Espaciado entre los iconos */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los iconos */
+}
+
+/* Contenedor para las descripciones */
+.language-description-container {
+    margin-left: 120px; /* Ajusta este margen según el tamaño de los iconos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px; /* Altura fija para el contenedor */
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+/* Estilo para las descripciones de lenguajes */
+.language-description {
+    display: none; /* Se ocultan inicialmente */
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Mostrar solo la descripción activa */
+.language-description.active {
+    display: block;
+}
