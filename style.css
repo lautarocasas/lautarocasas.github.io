@@ -1,42 +1,46 @@
-.main-languages{
-    margin: 10px;
-    margin-bottom: 70px;
-    align-items: center;
+:root{
+    background-color: rgb(169, 140, 175);
 }
 
-h1{
+*{
+    margin-left: 30px;
+    margin-right: 30px;
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
     font-style: normal;
+}
+
+
+h1{
+    font-weight: 700;
 }
 
 h2{
-    font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-style: normal;
 }
 
 /* Subtitulos de cada seccion */
 h3{
-    font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-style: normal;
     font-size: 28px;
-
 }
 
 p{
-    font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-style: normal;
     font-size: 20px;
 }
+
+/* Seccion de lenguajes principales */
+.main-languages{
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    border-radius: 4;
+}
+
 /* Contenedor de los iconos de lenguajes */
 .language-icons {
     display: flex;
-    flex-direction: column; /* Alineación vertical */
-    width: 100px; /* Ajusta el tamaño del contenedor de iconos si es necesario */
-    float: left; /* Alinear a la izquierda */
+    float: left; 
     margin-right: 20px;
 }
 
@@ -44,36 +48,51 @@ p{
 .main-language-icon {
     width: 80px;
     height: 80px;
-    margin: 10px 0; /* Espaciado entre los iconos */
-    cursor: pointer; /* Cambia el cursor al pasar sobre los iconos */
+    margin: 30px; 
+    padding: 8px;
+    cursor: pointer; 
+    border-radius: 5px;
 }
 
 /* Efecto de zoom al hacer hover sobre el icono */
 .main-language-icon:hover {
     transform: scale(1.1);
+    background-color: white;
 }
 
 /* Contenedor para las descripciones */
 .language-description-container {
-    margin-left: 20px; /* Ajusta este margen según el tamaño de los iconos */
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 380px; /* Altura fija para el contenedor */
-    width: 400px;
+    height: 200px; 
+    width: 800px;
     border: 1px solid #ccc;
-    padding: 20px;
     background-color: #f9f9f9;
-    position: relative;
+    border-radius: 30px;
 }
 
 /* Estilo para las descripciones de lenguajes */
 .language-description {
-    display: none; /* Se ocultan inicialmente */
+    display: none; 
     font-size: 20px;
 }
 
 /* Mostrar solo la descripción activa */
 .language-description.active {
     display: block;
+}
+
+.secondary-languages{
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    border-radius: 4;
+}
+
+.secondary-language-icon{
+    width: 80px;
+    height: 80px;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 8px;
 }
