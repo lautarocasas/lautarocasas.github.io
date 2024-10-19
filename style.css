@@ -1,9 +1,36 @@
 .main-languages{
     margin: 10px;
     margin-bottom: 70px;
+    align-items: center;
 }
 
+h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
 
+h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Subtitulos de cada seccion */
+h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+}
 /* Contenedor de los iconos de lenguajes */
 .language-icons {
     display: flex;
@@ -21,13 +48,19 @@
     cursor: pointer; /* Cambia el cursor al pasar sobre los iconos */
 }
 
+/* Efecto de zoom al hacer hover sobre el icono */
+.main-language-icon:hover {
+    transform: scale(1.1);
+}
+
 /* Contenedor para las descripciones */
 .language-description-container {
-    margin-left: 120px; /* Ajusta este margen según el tamaño de los iconos */
+    margin-left: 20px; /* Ajusta este margen según el tamaño de los iconos */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 300px; /* Altura fija para el contenedor */
+    height: 380px; /* Altura fija para el contenedor */
+    width: 400px;
     border: 1px solid #ccc;
     padding: 20px;
     background-color: #f9f9f9;
@@ -37,8 +70,7 @@
 /* Estilo para las descripciones de lenguajes */
 .language-description {
     display: none; /* Se ocultan inicialmente */
-    font-size: 16px;
-    text-align: justify;
+    font-size: 20px;
 }
 
 /* Mostrar solo la descripción activa */

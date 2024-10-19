@@ -7,3 +7,6 @@ function showDescription(languageId) {
     const selectedDescription = document.getElementById(languageId);
     selectedDescription.classList.add('active');
 }
+
+
+showDescription('c-cpp');
