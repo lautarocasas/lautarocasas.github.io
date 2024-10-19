@@ -18,10 +18,13 @@
 header
 {
     background-color:#000000;
+    display: flex;
     color: #FFD700;
     width: 100%;
     position: sticky;
-    margin-bottom: 30px;
+    height: 100px;
+    justify-content: center;
+    flex-direction: column;
 }
 
 h1{
@@ -36,13 +39,21 @@ h2{
 
 /* Subtitulos de cada seccion */
 h3{
+    margin-top: 16px;
     font-weight: 400;
     font-size: 28px;
+    margin-left: 30px;
 }
 
 p{
+    margin-top: 8px;
     font-weight: 300;
     font-size: 20px;
+    margin-left: 30px;
+}
+
+.sobre-mi{
+    margin-left: 30px;
 }
 
 /* Seccion de lenguajes principales */
